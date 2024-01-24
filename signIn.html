@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Memory</title>
+</head>
+<body class="background-image">
+
+    <div class="acceuil-menu">
+        <a href="accueil.html" class="acceuil-menu-item">Accueil</a>
+        <a href="signIn.html" class="acceuil-menu-item">S'inscrire</a>
+        <a href="login.html" class="acceuil-menu-item">Se connecter</a>
+        <a href="profil.html" class="acceuil-menu-item">Profil</a>
+        <a href="jeu.html" class="acceuil-menu-item">Jouer</a>
+    </div>
+    
+    <h1>Space Memory</h1>
+
+
+    <div class="accueil-wrapper">  
+        <h2 class="acceuil-title">S'inscrire</h1>  
+
+            <div>
+                    <form id="memoryForm" class="form">
+
+                        <label class="memory-text-form" for="pseudonyme">Choississez un nom d'utilisateur</label>
+                        <input id="pseudonyme" name="pseudonyme" class="memory-input" placeholder="3 caractères minimum"/>
+                        <div class="message-erreur" id="erreur-pseudonyme"></div>
+
+                        <label class="memory-text-form" for="mail">Entrez votre email</label>
+                        <input id="mail" name="mail" class="memory-input" placeholder="exemple@exemple.fr" />
+                        <div class="message-erreur" id="erreur-mail"></div>
+                        
+                        <label class="memory-text-form"  for="motdepasse">Choisissez un mot de passe</label>
+                        <input id="motdepasse" name="motdepasse" class="memory-input" placeholder="6 caractères minimum, un symbole et un chiffre" type="password"/>
+                        <div class="message-erreur" id="erreur-motdepasse"></div>
+
+                        <label class="memory-text-form"  for="motdepasse">Confirmez le mot de passe</label>
+                        <input id="motdepasseconf" name="passwordConf" class="memory-input" placeholder="Veillez à entrer le même mot de passe" type="password"/>
+                        <div class="message-erreur" id="erreur-motdepasse"></div>
+    
+                        <div class="button-container">
+                            <button type="submit" class="button-form">Soumettre</button>
+                            <button type="reset" class="button-form">Annuler</button>
+                    </div>
+                    </form>
+            
+                    <div class="message-success" id="message-success"></div>
+                    <div class="userlist" id="userlist"></div>
+                   
+            </div>
+    </div>
+
+    <script src="./form.js" type="module"></script>
+
+
+</body>
+</html>

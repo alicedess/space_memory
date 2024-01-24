@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Memory</title>
+</head>
+<body class="background-image">
+
+    <div class="acceuil-menu">
+        <a href="accueil.html" class="acceuil-menu-item">Accueil</a>
+        <a href="signIn.html" class="acceuil-menu-item">S'inscrire</a>
+        <a href="login.html" class="acceuil-menu-item">Se connecter</a>
+        <a href="profil.html" class="acceuil-menu-item">Profil</a>
+        <a href="jeu.html" class="acceuil-menu-item">Jouer</a>
+    </div>
+    
+    <h1>Space Memory</h1>
+
+    <div class="tableau-scores">
+        <div id="compteur-coups"></div>
+        <div id="time"></div>
+    </div>
+
+        <div class="game-wrapper"></div>
+
+        <div class="controls-wrapper">
+        
+            <p id="result"></p>
+            <button id="start">Commencer le jeu</button>
+            <p class="memory-text-game">💫 Cliquez sur le bouton ou appuyez sur la barre d'esapce ! 💫</p>
+    </div>
+        <button id="stop" class="hide">Arrêter le jeu</button>
+    </div>
+
+    <script src="./jeu.js" type="text/javascript"></script>
+
+</body>
+</html>
